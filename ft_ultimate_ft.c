@@ -1,41 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_ultimate_ft.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ahoussei <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/04/18 20:22:54 by ahoussei          #+#    #+#             */
-/*   Updated: 2018/04/18 20:31:13 by ahoussei         ###   ########.fr       */
+/*   Created: 2018/06/08 16:19:16 by ahoussei          #+#    #+#             */
+/*   Updated: 2018/06/08 16:19:22 by ahoussei         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-/*Create a function that displays a string of characters on the standard output. 
-*Here’s how it should be prototyped : void	ft_putstr(char const *str) */
-
 #include <unistd.h>
 
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+/*Create a function that takes a pointer to pointer to pointer to pointer to pointer to pointer to pointer to pointer to pointer to int as a parameter and sets the value "42" to that int.
+*Here’s how it should be prototyped :
+*void ft_ultimate_ft(int *********nbr)*/
 
-void	ft_putstr(char const *str)
+void ft_ultimate_ft(int *********nbr)
 {
-	while(*str != 0)
-	{
-		ft_putchar(*str);
-		str++;
-	}
-}
-
-int 	main(int argc, char **argv)
-{
-	if(argc > 1)
-	{
-		ft_putstr(argv[1]);
-	}
-	ft_putchar('\n');
-	return (0);
+    *********nbr = "42";     
 }
