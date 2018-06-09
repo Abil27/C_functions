@@ -49,9 +49,9 @@ char *ft_strrev(char *str)
 
 int     main()
 {
-    char name[30] = "Houssein";
+    char name[10] = "Houssein";
     ft_strrev(name);
-    printf("The name Houssein after Strrev is %s \n", name);
+    printf("The name Houssein after Strrev is %s\n", name);
     return (0);
 }
 
